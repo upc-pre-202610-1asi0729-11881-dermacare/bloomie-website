@@ -7,10 +7,8 @@
   "nav.login": "Iniciar sesión",
   "nav.cta": "Analizar mi piel",
 
-  "hero.title": "Tu piel merece más que un cuestionario",
   "hero.subtitle": "Bloomie analiza tu rostro y crea una rutina personalizada",
 
-  "features.title": "Todo lo que tu piel necesita en un solo lugar",
   "features.subtitle": "Tu piel merece un ecosistema completo",
 
   "features.ai.title": "Análisis multicapa con IA",
@@ -37,12 +35,8 @@
   "features.reminders.desc": "Bloomie te recuerda cuándo aplicar cada producto.",
   "features.reminders.tag": "Hábito + constancia",
 
-  "how.title": "De selfie a rutina en menos de 60 segundos",
   "how.subtitle": "Sin citas. Sin esperas. Sin diagnósticos genéricos",
 
-  "results.title": "Datos reales. Pieles que mejoraron",
-
-  "pricing.title": "Invierte en tu piel, no en la incertidumbre",
   "toggle.monthly": "Mensual",
   "toggle.annual": "Anual",
 
@@ -151,5 +145,11 @@
   "hero.tag.texture": "Textura",
   "hero.tag.even": "Uniforme",
   "hero.score.label": "Puntuación de piel",
-  "hero.score.sub": "de 100"
+  "hero.score.sub": "de 100",
+
+  "features.title": "Todo lo que tu piel<br/>necesita, <em>en un solo lugar</em>",
+  "how.title": "De selfie a rutina<br/>en menos de <em>60 segundos</em>",
+  "results.title": "Datos reales.<br/>Pieles que <em>florecieron</em>.",
+  "pricing.title": "Invierte en tu piel,<br/>no en la <em>incertidumbre</em>",
+  "hero.title": "Tu piel merece más<br/>que un <em>cuestionario</em>"
 }

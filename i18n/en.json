@@ -7,10 +7,8 @@
   "nav.login": "Log in",
   "nav.cta": "Analyze my skin",
 
-  "hero.title": "Your skin deserves more than a questionnaire",
   "hero.subtitle": "Bloomie scans your face and builds a personalized routine",
 
-  "features.title": "Everything your skin needs in one place",
   "features.subtitle": "Your skin deserves a complete ecosystem",
 
   "features.ai.title": "Multi-layer AI analysis",
@@ -64,9 +62,6 @@
   "how.step6.desc": "Track your progress over time.",
   "how.step6.badge": "Tracking",
 
-  "results.title": "Real data. Skins that improved",
-
-  "pricing.title": "Invest in your skin, not in uncertainty",
   "toggle.monthly": "Monthly",
   "toggle.annual": "Annual",
 
@@ -149,5 +144,12 @@
   "hero.tag.texture": "Texture",
   "hero.tag.even": "Even",
   "hero.score.label": "Score of skin",
-  "hero.score.sub": "out of 100"
+  "hero.score.sub": "out of 100",
+
+  "features.title": "Everything your skin<br/>needs, <em>in one place</em>",
+  "how.title": "From selfie to routine<br/>in under <em>60 seconds</em>",
+  "results.title": "Real data.<br/>Skins that <em>flourished</em>.",
+  "pricing.title": "Invest in your skin,<br/>not in <em>uncertainty</em>",
+  "hero.title": "Your skin deserves<br/>more than a <em>questionnaire</em>"
+  
 }
