@@ -15,7 +15,7 @@ async function loadLanguage(lang) {
       const key = el.getAttribute("data-i18n");
 
       if (translations[key]) {
-        el.textContent = translations[key];
+        el.innerHTML = translations[key];
       } else {
         console.warn("Falta traducción para:", key);
       }
