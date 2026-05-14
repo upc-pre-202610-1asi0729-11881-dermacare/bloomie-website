@@ -13,7 +13,7 @@
     <nav id="site-nav" class="site-nav">
       <a href="index.html" class="nav-logo">Bloom<span>ie</span></a>
 
-      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 
       <button id="lang-btn" onclick="toggleLanguage()" class="lang-btn">EN</button>
 
@@ -33,13 +33,10 @@
       <section id="features">
 
         <div class="features-header">
-          <!-- ESTE LO DEJO FIJO PARA NO ROMPER EL <br> -->
           <span class="section-tag">Features</span>
-
-          <h1 class="section-title">
-            Everything your skin<br />
-            needs, <em>in one place</em>
-          </h1>
+            <h1 class="section-title" data-i18n="features.title">
+              Everything your skin<br/>needs, <em>in one place</em>
+            </h1>
 
           <p class="section-sub" data-i18n="features.subtitle">
             You are not a questionnaire. Your skin deserves a complete ecosystem.

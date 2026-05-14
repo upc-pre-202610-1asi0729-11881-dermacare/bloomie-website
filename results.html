@@ -14,7 +14,7 @@
 
     <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
       <a href="index.html" class="nav-logo" aria-label="Bloomie — home">Bloom<span>ie</span></a>
-      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 
       <!-- BOTÓN IDIOMA -->
       <button id="lang-btn" onclick="toggleLanguage()" class="lang-btn">EN</button> 
@@ -37,7 +37,7 @@
           <!-- Left: stats -->
           <div class="reveal">
             <span class="section-tag" data-i18n="results.tag">Results</span>
-            <h1 class="section-title" id="results-title">
+            <h1 class="section-title" id="results-title" data-i18n="results.title">
               Real data.<br />Skins that <em>flourished</em>.
             </h1>
             <p class="section-sub" data-i18n="results.subtitle">
