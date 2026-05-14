@@ -155,5 +155,35 @@
 </footer>
 
 <script src="js/i18n.js"></script>
+<script>
+  const PRICES = {
+    monthly: { starter: 9,  advanced: 19, elite: 39 },
+    annual:  { starter: 6,  advanced: 13, elite: 27 }
+  };
+
+  const billingToggle = document.getElementById("billing-toggle");
+  let isAnnual = false;
+
+  function updatePrices() {
+    const prices = PRICES[isAnnual ? "annual" : "monthly"];
+
+    document.querySelector('[aria-label="Starter Plan"] .plan-price').textContent  = "$" + prices.starter;
+    document.querySelector('[aria-label="Advanced Plan — most popular"] .plan-price').textContent = "$" + prices.advanced;
+    document.querySelector('[aria-label="Elite Plan"] .plan-price').textContent    = "$" + prices.elite;
+
+    document.querySelectorAll(".plan-period").forEach(el => {
+      el.textContent = isAnnual
+        ? el.textContent.replace("billed monthly", "billed annually")
+        : el.textContent.replace("billed annually", "billed monthly");
+    });
+  }
+
+  billingToggle.addEventListener("click", () => {
+    isAnnual = !isAnnual;
+    billingToggle.classList.toggle("active", isAnnual);
+    billingToggle.setAttribute("aria-pressed", isAnnual);
+    updatePrices();
+  });
+</script>
 </body>
 </html>
