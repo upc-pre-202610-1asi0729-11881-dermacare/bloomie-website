@@ -99,6 +99,7 @@ body {
   color: var(--mid);
   text-decoration: none;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -113,6 +114,25 @@ body {
   font-size: 0.78rem;
   letter-spacing: 0.07em;
   transition: background 0.22s;
+  white-space: nowrap;
+}
+
+.site-nav,
+.nav-links,
+.nav-links li {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    justify-content: flex-end;
+    gap: 1.1rem;
+  }
 }
 
 .nav-links .nav-cta:hover {
