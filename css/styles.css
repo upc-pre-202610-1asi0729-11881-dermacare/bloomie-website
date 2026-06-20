@@ -1083,7 +1083,7 @@ min-height: unset;
   transition: background 0.28s;
 
   flex-shrink: 0;
-  display: inline-block; /* 🔥 importante */
+  display: inline-block; 
 }
 
 .toggle-knob {
