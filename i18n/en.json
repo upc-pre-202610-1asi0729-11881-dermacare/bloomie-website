@@ -131,6 +131,12 @@
   "about.subtitle": "The team behind Bloomie",
   "about.desc": "At Bloomie, we believe that healthy skin builds confidence. That's why our team works to create a tool that understands you and helps you shine every day.",
   "about.role.cofounder": "Co-Founder",
+  "about.product.tag": "Product · Overview",
+  "about.product.title": "About the <em>Product</em>",
+  "about.product.desc": "Promotional overview of Bloomie: business model, key features, and benefits — including real interaction scenes and user testimonials from each target segment.",
+  "about.team.tag": "Team · Process",
+  "about.team.title": "About the <em>Team</em>",
+  "about.team.desc": "A behind-the-scenes look at our work process: real team sessions, voice-over narration, and each member sharing their contributions, outcomes, and competencies developed.",
 
   "hero.eyebrow": "Clinical AI skin analysis",
   "hero.sub": "Bloomie scans your face with computer vision, detects acne, spots, and texture with clinical precision, and delivers the exact routine your skin needs.",
