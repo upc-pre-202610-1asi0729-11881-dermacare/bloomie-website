@@ -43,6 +43,10 @@ async function loadLanguage(lang) {
       if (translations[key]) el.innerHTML = translations[key];
       else console.warn("Falta traducción para:", key);
     });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+      const key = el.getAttribute("data-i18n-placeholder");
+      if (translations[key]) el.placeholder = translations[key];
+    });
     localStorage.setItem("lang", lang);
   } catch (error) {
     console.error("Error cargando idioma:", error);

@@ -4,153 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Features — Bloomie</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <!-- NAV -->
-    <nav id="site-nav" class="site-nav">
-      <a href="index.html" class="nav-logo">Bloom<span>ie</span></a>
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-
+    <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Bloomie — home">Bloom<span>ie</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <button id="lang-btn" onclick="toggleLanguage()" class="lang-btn">EN</button>
-
       <ul class="nav-links">
         <li><a href="how-it-works.html" data-i18n="nav.how">How it works</a></li>
-        <li><a href="results.html" data-i18n="nav.results">Results</a></li>
-        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="features.html" aria-current="page" data-i18n="nav.features">Features</a></li>
         <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
         <li><a href="about.html" data-i18n="nav.about">About us</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact us</a></li>
         <li><a href="https://witty-beach-0bf4c770f.7.azurestaticapps.net" class="nav-cta" data-i18n="nav.login">Log in</a></li>
       </ul>
     </nav>
 
-    <!-- FEATURES -->
     <main>
-      <section id="features">
+      <section id="features" aria-labelledby="features-title">
 
-        <div class="features-header">
-          <span class="section-tag">Features</span>
-            <h1 class="section-title" data-i18n="features.title">
-              Everything your skin<br/>needs, <em>in one place</em>
-            </h1>
-
+        <div class="features-header reveal">
+          <span class="section-tag" data-i18n="features.tag">Features</span>
+          <h1 class="section-title" id="features-title" data-i18n="features.title">
+            Everything your skin<br />needs, <em>in one place</em>
+          </h1>
           <p class="section-sub" data-i18n="features.subtitle">
             You are not a questionnaire. Your skin deserves a complete ecosystem.
           </p>
         </div>
 
-        <div class="features-grid">
+        <div class="features-grid reveal" role="list">
 
-          <article class="feat-card">
-            <div class="feat-icon">🤖</div>
-            <h2 class="feat-title" data-i18n="features.ai.title">
-              Multi-layer AI analysis
-            </h2>
-            <p class="feat-desc" data-i18n="features.ai.desc">
-              Computer Vision trained with over 2M dermatological images.
-              Detects 12+ conditions with clinical precision.
-            </p>
-            <span class="feat-tag" data-i18n="features.ai.tag">
-              Machine Learning
-            </span>
+          <!-- Card 1: AI Analysis — wide (spans 2 cols) -->
+          <article class="feat-card" role="listitem">
+            <div class="feat-icon-wrap" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/>
+                <circle cx="5.5" cy="17.5" r="1.3" fill="currentColor" stroke="none"/>
+                <circle cx="19.5" cy="4.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <div class="feat-body">
+              <h2 class="feat-title" data-i18n="features.ai.title">Multi-layer AI analysis</h2>
+              <p class="feat-desc" data-i18n="features.ai.desc">
+                Computer Vision trained with over 2M dermatological images.
+                Detects 12+ conditions with clinical precision.
+              </p>
+              <span class="feat-tag" data-i18n="features.ai.tag">Computer Vision</span>
+            </div>
           </article>
 
-          <article class="feat-card">
-            <div class="feat-icon">📊</div>
-            <h2 class="feat-title" data-i18n="features.dashboard.title">
-              Progress dashboard
-            </h2>
-            <p class="feat-desc" data-i18n="features.dashboard.desc">
-              Visualize your progress week by week. Compare before/after photos with AI overlays and clear graphs.
-            </p>
-            <span class="feat-tag" data-i18n="features.dashboard.tag">
-              Continuous tracking
-            </span>
+          <!-- Card 2: Progress Dashboard -->
+          <article class="feat-card" role="listitem">
+            <div class="feat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 17 9 11 13 15 21 7"/>
+                <polyline points="15 7 21 7 21 13"/>
+                <line x1="3" y1="21" x2="21" y2="21"/>
+              </svg>
+            </div>
+            <div class="feat-body">
+              <h2 class="feat-title" data-i18n="features.dashboard.title">Progress dashboard</h2>
+              <p class="feat-desc" data-i18n="features.dashboard.desc">
+                Visualize your progress week by week. Compare before/after photos with AI overlays and clear graphs.
+              </p>
+              <span class="feat-tag" data-i18n="features.dashboard.tag">Continuous tracking</span>
+            </div>
           </article>
 
-          <article class="feat-card">
-            <div class="feat-icon">🧴</div>
-            <h2 class="feat-title" data-i18n="features.routine.title">
-              Personalized AM/PM routine
-            </h2>
-            <p class="feat-desc" data-i18n="features.routine.desc">
-              Steps ordered, active ingredients recommended, usage times.
-              Your routine is unique, like your skin.
-            </p>
-            <span class="feat-tag" data-i18n="features.routine.tag">
-              Hyper-personalization
-            </span>
+          <!-- Card 3: AM/PM Routine -->
+          <article class="feat-card" role="listitem">
+            <div class="feat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 7 12 12 15.5 14"/>
+              </svg>
+            </div>
+            <div class="feat-body">
+              <h2 class="feat-title" data-i18n="features.routine.title">Personalized AM/PM routine</h2>
+              <p class="feat-desc" data-i18n="features.routine.desc">
+                Steps ordered, active ingredients recommended, usage times.
+                Your routine is unique, like your skin.
+              </p>
+              <span class="feat-tag" data-i18n="features.routine.tag">Hyper-personalization</span>
+            </div>
           </article>
 
-          <article class="feat-card">
-            <div class="feat-icon">🗺️</div>
-            <h2 class="feat-title" data-i18n="features.geo.title">
-              Product geolocation
-            </h2>
-            <p class="feat-desc" data-i18n="features.geo.desc">
-              Find exactly where to buy what you need. Pharmacies, stores,
-              and e-commerce in your area.
-            </p>
-            <span class="feat-tag" data-i18n="features.geo.tag">
-              Complete ecosystem
-            </span>
-          </article>
-
-          <article class="feat-card">
-            <div class="feat-icon">👩‍⚕️</div>
-            <h2 class="feat-title" data-i18n="features.derm.title">
-              Dermatology access
-            </h2>
-            <p class="feat-desc" data-i18n="features.derm.desc">
-              When the AI detects conditions requiring professional attention,
-              it connects you with certified dermatologists.
-            </p>
-            <span class="feat-tag" data-i18n="features.derm.tag">
-              Integrated medical network
-            </span>
-          </article>
-
-          <article class="feat-card">
-            <div class="feat-icon">🔔</div>
-            <h2 class="feat-title" data-i18n="features.reminders.title">
-              Smart reminders
-            </h2>
-            <p class="feat-desc" data-i18n="features.reminders.desc">
-              The habit is 90% of the result. Bloomie reminds you when to apply
-              each product and do your check-in.
-            </p>
-            <span class="feat-tag" data-i18n="features.reminders.tag">
-              Adherence + habit
-            </span>
+          <!-- Card 4: Dermatology — wide (spans 2 cols) -->
+          <article class="feat-card feat-card--wide" role="listitem">
+            <div class="feat-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l8 4v5c0 4.4-3.4 8.5-8 10-4.6-1.5-8-5.6-8-10V7z"/>
+                <line x1="12" y1="9" x2="12" y2="15"/>
+                <line x1="9" y1="12" x2="15" y2="12"/>
+              </svg>
+            </div>
+            <div class="feat-body">
+              <h2 class="feat-title" data-i18n="features.derm.title">Dermatology access</h2>
+              <p class="feat-desc" data-i18n="features.derm.desc">
+                When the AI detects conditions requiring professional attention,
+                it connects you with certified dermatologists.
+              </p>
+              <span class="feat-tag" data-i18n="features.derm.tag">Medical network</span>
+            </div>
+            <div class="feat-banner-deco" aria-hidden="true">
+              <span class="feat-deco-ring"></span>
+              <span class="feat-deco-ring feat-deco-ring--lg"></span>
+            </div>
           </article>
 
         </div>
+
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="footer-inner">
-
         <div class="footer-brand">Bloom<span>ie</span></div>
-
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Secondary navigation">
           <a href="how-it-works.html" data-i18n="footer.how">How it works</a>
           <a href="features.html" data-i18n="footer.features">Features</a>
           <a href="pricing.html" data-i18n="footer.pricing">Pricing</a>
           <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
         </nav>
-
-        <div class="footer-legal">
-          <a href="#" data-i18n="footer.privacy">Privacy</a>
-          <a href="#" data-i18n="footer.terms">Terms</a>
-        </div>
-
       </div>
-
       <p class="footer-copy">© 2026 Bloomie</p>
     </footer>
 
