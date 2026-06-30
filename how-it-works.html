@@ -4,172 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How it works — Bloomie</title>
-
-    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <!-- NAV -->
-    <nav id="site-nav" class="site-nav">
-      <a href="index.html" class="nav-logo">Bloom<span>ie</span></a>
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-
-      <!-- BOTÓN IDIOMA -->
+    <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Bloomie — home">Bloom<span>ie</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <button id="lang-btn" onclick="toggleLanguage()" class="lang-btn">EN</button>
-
       <ul class="nav-links">
-        <li><a href="how-it-works.html" data-i18n="nav.how">How it works</a></li>
-        <li><a href="results.html" data-i18n="nav.results">Results</a></li>
+        <li><a href="how-it-works.html" aria-current="page" data-i18n="nav.how">How it works</a></li>
         <li><a href="features.html" data-i18n="nav.features">Features</a></li>
         <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
         <li><a href="about.html" data-i18n="nav.about">About us</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact us</a></li>
         <li><a href="https://witty-beach-0bf4c770f.7.azurestaticapps.net" class="nav-cta" data-i18n="nav.login">Log in</a></li>
       </ul>
     </nav>
 
-    <!-- HOW -->
     <main>
-      <section id="how">
+      <section id="how" aria-labelledby="how-title">
 
+        <!-- Header -->
         <div class="how-header reveal">
           <span class="section-tag" data-i18n="how.tag">How it works</span>
-
-          <h1 class="section-title" data-i18n="how.title">
+          <h1 class="section-title" id="how-title" data-i18n="how.title">
             From selfie to routine<br />in under <em>60 seconds</em>
           </h1>
-
           <p class="section-sub" data-i18n="how.subtitle">
             No appointments. No waiting. No generic diagnoses.
           </p>
         </div>
 
-        <!-- ROW 1 -->
-        <div class="steps-container reveal">
+        <!-- Steps grid -->
+        <div class="how-grid reveal" role="list">
 
-          <div class="steps-connector"></div>
+          <!-- Step 1 -->
+          <article class="step-card" data-step="01" role="listitem">
+            <div class="step-card-header">
+              <span class="step-num-pill">01</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M4 20c0-3.8 3.6-7 8-7s8 3.2 8 7"/>
+                </svg>
+              </div>
+            </div>
+            <h2 class="step-card-title" data-i18n="how.step1.title">Create your profile</h2>
+            <p class="step-card-desc" data-i18n="how.step1.desc">Register in 30 seconds. Your age, lifestyle and concerns give the context that the AI needs.</p>
+            <span class="step-badge" data-i18n="how.step1.badge">30 seconds</span>
+          </article>
 
-          <div class="step">
-            <div class="step-num">1</div>
-            <span class="step-icon">👤</span>
-            <h2 class="step-title" data-i18n="how.step1.title">
-              Create your profile
-            </h2>
-            <p class="step-desc" data-i18n="how.step1.desc">
-              Register in 30 seconds. Your age, lifestyle and concerns give the context that the AI needs.
-            </p>
-            <span class="step-badge" data-i18n="how.step1.badge">
-              30 seconds
-            </span>
-          </div>
+          <!-- Step 2 -->
+          <article class="step-card" data-step="02" role="listitem">
+            <div class="step-card-header">
+              <span class="step-num-pill">02</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/>
+                  <path d="M8 7l1.5-3h5L16 7"/>
+                  <circle cx="12" cy="14" r="3.5"/>
+                </svg>
+              </div>
+            </div>
+            <h2 class="step-card-title" data-i18n="how.step2.title">Upload your photo</h2>
+            <p class="step-card-desc" data-i18n="how.step2.desc">Take a selfie with good light. Our capture guide ensures the perfect angle for analysis.</p>
+            <span class="step-badge" data-i18n="how.step2.badge">Real-time selfie</span>
+          </article>
 
-          <div class="step">
-            <div class="step-num">2</div>
-            <span class="step-icon">📸</span>
-            <h2 class="step-title" data-i18n="how.step2.title">
-              Upload your photo
-            </h2>
-            <p class="step-desc" data-i18n="how.step2.desc">
-              Take a selfie with good light. Our capture guide ensures the perfect angle for analysis.
-            </p>
-            <span class="step-badge" data-i18n="how.step2.badge">
-              Real-time selfie
-            </span>
-          </div>
+          <!-- Step 3 -->
+          <article class="step-card" data-step="03" role="listitem">
+            <div class="step-card-header">
+              <span class="step-num-pill">03</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                  <path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/>
+                  <line x1="3" y1="12" x2="21" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <h2 class="step-card-title" data-i18n="how.step3.title">AI analyzes your skin</h2>
+            <p class="step-card-desc" data-i18n="how.step3.desc">Our model detects over 12 skin conditions.</p>
+            <span class="step-badge" data-i18n="how.step3.badge">Multi-layer analysis</span>
+          </article>
 
-          <div class="step">
-            <div class="step-num">3</div>
-            <span class="step-icon">🤖</span>
-            <h2 class="step-title" data-i18n="how.step3.title">
-              AI analyzes your skin
-            </h2>
-            <p class="step-desc" data-i18n="how.step3.desc">
-              Our model detects over 12 skin conditions.
-            </p>
-            <span class="step-badge" data-i18n="how.step3.badge">
-              Multi-layer analysis
-            </span>
-          </div>
+          <!-- Step 4 -->
+          <article class="step-card" data-step="04" role="listitem">
+            <div class="step-card-header">
+              <span class="step-num-pill">04</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2"/>
+                  <line x1="9" y1="10" x2="15" y2="10"/>
+                  <line x1="9" y1="14" x2="13" y2="14"/>
+                </svg>
+              </div>
+            </div>
+            <h2 class="step-card-title" data-i18n="how.step4.title">Receive your routine</h2>
+            <p class="step-card-desc" data-i18n="how.step4.desc">AM/PM personalized with prioritized steps.</p>
+            <span class="step-badge" data-i18n="how.step4.badge">AM + PM personalized</span>
+          </article>
 
-        </div>
+          <!-- Step 5 -->
+          <article class="step-card" data-step="05" role="listitem">
+            <div class="step-card-header">
+              <span class="step-num-pill">05</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                  <path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 13 6 13s6-8 6-13c0-3.3-2.7-6-6-6z"/>
+                  <circle cx="12" cy="8" r="2.5"/>
+                </svg>
+              </div>
+            </div>
+            <h2 class="step-card-title" data-i18n="how.step5.title">Find the products</h2>
+            <p class="step-card-desc" data-i18n="how.step5.desc">Each ingredient is mapped to real products.</p>
+            <span class="step-badge" data-i18n="how.step5.badge">Real products + geo</span>
+          </article>
 
-        <!-- ROW 2 -->
-        <div class="steps-row2 reveal">
-
-          <div class="steps-connector"></div>
-
-          <div class="step">
-            <div class="step-num">4</div>
-            <span class="step-icon">🧴</span>
-            <h2 class="step-title" data-i18n="how.step4.title">
-              Receive your routine
-            </h2>
-            <p class="step-desc" data-i18n="how.step4.desc">
-              AM/PM personalized with prioritized steps.
-            </p>
-            <span class="step-badge" data-i18n="how.step4.badge">
-              AM + PM personalized
-            </span>
-          </div>
-
-          <div class="step">
-            <div class="step-num">5</div>
-            <span class="step-icon">🗺️</span>
-            <h2 class="step-title" data-i18n="how.step5.title">
-              Find the products
-            </h2>
-            <p class="step-desc" data-i18n="how.step5.desc">
-              Each ingredient is mapped to real products.
-            </p>
-            <span class="step-badge" data-i18n="how.step5.badge">
-              Real products + geo
-            </span>
-          </div>
-
-          <div class="step">
-            <div class="step-num">6</div>
-            <span class="step-icon">📈</span>
-            <h2 class="step-title" data-i18n="how.step6.title">
-              Measure your evolution
-            </h2>
-            <p class="step-desc" data-i18n="how.step6.desc">
-              Weekly check-in and progress tracking.
-            </p>
-            <span class="step-badge" data-i18n="how.step6.badge">
-              Visual tracking
-            </span>
-          </div>
+          <!-- Step 6 -->
+          <article class="step-card" data-step="06" role="listitem">
+            <div class="step-card-header">
+              <span class="step-num-pill">06</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="3 17 9 11 13 15 21 7"/>
+                  <polyline points="16 7 21 7 21 12"/>
+                </svg>
+              </div>
+            </div>
+            <h2 class="step-card-title" data-i18n="how.step6.title">Measure your evolution</h2>
+            <p class="step-card-desc" data-i18n="how.step6.desc">Weekly check-in and progress tracking.</p>
+            <span class="step-badge" data-i18n="how.step6.badge">Visual tracking</span>
+          </article>
 
         </div>
 
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="footer-inner">
-
         <div class="footer-brand">Bloom<span>ie</span></div>
-
         <nav class="footer-nav">
           <a href="how-it-works.html" data-i18n="footer.how">How it works</a>
           <a href="features.html" data-i18n="footer.features">Features</a>
           <a href="pricing.html" data-i18n="footer.pricing">Pricing</a>
           <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
         </nav>
-
-        <div class="footer-legal">
-          <a href="#" data-i18n="footer.privacy">Privacy</a>
-          <a href="#" data-i18n="footer.terms">Terms</a>
-        </div>
-
       </div>
-
       <p class="footer-copy">© 2026 Bloomie</p>
     </footer>
 
-    <!-- IMPORTANTE -->
     <script src="js/i18n.js"></script>
-
   </body>
 </html>
