@@ -78,30 +78,9 @@
                 </button>            
             </div>
 
-            <!-- Advanced Plan (FEATURED) -->
-            <div class="plan-card featured" role="listitem" aria-label="Advanced Plan — most popular">
+            <!-- Elite Plan (FEATURED) -->
+            <div class="plan-card featured" role="listitem" aria-label="Elite Plan — most popular">
                 <div class="plan-badge" aria-hidden="true" data-i18n="pricing.badge">Most popular</div>
-                <p class="plan-name" data-i18n="pricing.advanced.name">Advanced</p>
-                <div class="plan-price">$19</div>
-                <p class="plan-period" data-i18n="pricing.advanced.period">per month · billed monthly</p>
-                <div class="plan-divider" aria-hidden="true"></div>
-                <ul class="plan-features" aria-label="Advanced plan features">
-                    <li data-i18n="pricing.advanced.f1">Unlimited AI skin analyses (max. 2 per day)</li>
-                    <li data-i18n="pricing.advanced.f2">AI-generated personalized routines</li>
-                    <li data-i18n="pricing.advanced.f3">Save products as favorites</li>
-                    <li data-i18n="pricing.advanced.f4">Full history & progress tracking</li>
-                    <li data-i18n="pricing.advanced.f5">Dermatologist directory & appointment booking</li>
-                </ul>
-                <!-- Advanced button -->
-                <button class="btn-plan feat"
-                        data-i18n="pricing.advanced.cta"
-                        onclick="window.location.href='https://witty-beach-0bf4c770f.7.azurestaticapps.net/iam/sign-in'">
-                  Start now →
-                </button>            
-            </div>
-
-            <!-- Elite Plan -->
-            <div class="plan-card" role="listitem" aria-label="Elite Plan">
                 <p class="plan-name" data-i18n="pricing.elite.name">Elite</p>
                 <div class="plan-price">$39</div>
                 <p class="plan-period" data-i18n="pricing.elite.period">per month · billed monthly</p>
@@ -116,11 +95,32 @@
                     <li data-i18n="pricing.elite.f7">Priority support dedicated to your account</li>
                 </ul>
                 <!-- Elite button -->
-                <button class="btn-plan"
+                <button class="btn-plan feat"
                         data-i18n="pricing.elite.cta"
                         onclick="window.location.href='https://witty-beach-0bf4c770f.7.azurestaticapps.net/iam/sign-in'">
                   Go Elite
-                </button>            
+                </button>
+            </div>
+
+            <!-- Advanced Plan -->
+            <div class="plan-card" role="listitem" aria-label="Advanced Plan">
+                <p class="plan-name" data-i18n="pricing.advanced.name">Advanced</p>
+                <div class="plan-price">$19</div>
+                <p class="plan-period" data-i18n="pricing.advanced.period">per month · billed monthly</p>
+                <div class="plan-divider" aria-hidden="true"></div>
+                <ul class="plan-features" aria-label="Advanced plan features">
+                    <li data-i18n="pricing.advanced.f1">Unlimited AI skin analyses (max. 2 per day)</li>
+                    <li data-i18n="pricing.advanced.f2">AI-generated personalized routines</li>
+                    <li data-i18n="pricing.advanced.f3">Save products as favorites</li>
+                    <li data-i18n="pricing.advanced.f4">Full history & progress tracking</li>
+                    <li data-i18n="pricing.advanced.f5">Dermatologist directory & appointment booking</li>
+                </ul>
+                <!-- Advanced button -->
+                <button class="btn-plan"
+                        data-i18n="pricing.advanced.cta"
+                        onclick="window.location.href='https://witty-beach-0bf4c770f.7.azurestaticapps.net/iam/sign-in'">
+                  Start now →
+                </button>
             </div>
 
         </div>
@@ -160,8 +160,8 @@
     const prices = PRICES[isAnnual ? "annual" : "monthly"];
 
     document.querySelector('[aria-label="Starter Plan"] .plan-price').textContent  = "$" + prices.starter;
-    document.querySelector('[aria-label="Advanced Plan — most popular"] .plan-price').textContent = "$" + prices.advanced;
-    document.querySelector('[aria-label="Elite Plan"] .plan-price').textContent    = "$" + prices.elite;
+    document.querySelector('[aria-label="Advanced Plan"] .plan-price').textContent = "$" + prices.advanced;
+    document.querySelector('[aria-label="Elite Plan — most popular"] .plan-price').textContent = "$" + prices.elite;
 
     document.querySelectorAll(".plan-period").forEach(el => {
       el.textContent = isAnnual
