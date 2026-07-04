@@ -1,9 +1,9 @@
 {
   "nav.how": "How it works",
-  "nav.results": "Results",
   "nav.features": "Features",
   "nav.pricing": "Pricing",
   "nav.about": "About us",
+  "nav.contact": "Contact us",
   "nav.login": "Log in",
   "nav.cta": "Analyze my skin",
 
@@ -13,7 +13,7 @@
 
   "features.ai.title": "Multi-layer AI analysis",
   "features.ai.desc": "Computer Vision trained with over 2M dermatological images.",
-  "features.ai.tag": "Machine Learning",
+  "features.ai.tag": "Computer Vision",
 
   "features.dashboard.title": "Progress dashboard",
   "features.dashboard.desc": "Visualize your progress week by week.",
@@ -23,17 +23,9 @@
   "features.routine.desc": "Steps ordered and tailored to your skin.",
   "features.routine.tag": "Hyper-personalization",
 
-  "features.geo.title": "Product geolocation",
-  "features.geo.desc": "Find exactly where to buy what you need.",
-  "features.geo.tag": "Complete ecosystem",
-
   "features.derm.title": "Dermatology access",
   "features.derm.desc": "Connect with certified dermatologists when needed.",
   "features.derm.tag": "Medical network",
-
-  "features.reminders.title": "Smart reminders",
-  "features.reminders.desc": "Bloomie reminds you when to apply each product.",
-  "features.reminders.tag": "Adherence + habit",
 
   "how.tag": "How it works",
   "how.subtitle": "No appointments. No waiting. No generic diagnoses.",
@@ -71,8 +63,33 @@
   "footer.features": "Features",
   "footer.pricing": "Pricing",
   "footer.about": "About",
-  "footer.privacy": "Privacy",
-  "footer.terms": "Terms",
+  "footer.contact": "Contact",
+
+  "contact.eyebrow": "Get in touch",
+  "contact.title": "Have questions? We'd love to<br/><em>hear from you</em>",
+  "contact.sub": "Whether you need support, want to explore a partnership, or have a media inquiry — our team will respond within 24 hours.",
+  "contact.card1.title": "Support",
+  "contact.card1.desc": "Issues with the app, your account, or skin analysis results.",
+  "contact.card2.title": "Partnerships",
+  "contact.card2.desc": "Clinics, dermatologists, and brands interested in collaborating.",
+  "contact.card3.title": "Press",
+  "contact.card3.desc": "Media inquiries and press resources for journalists.",
+  "contact.form.title": "Send us a <em>message</em>",
+  "contact.form.sub": "We'll get back to you as soon as possible.",
+  "contact.label.name": "Full name",
+  "contact.label.email": "Email",
+  "contact.label.subject": "Subject",
+  "contact.label.message": "Message",
+  "contact.placeholder.name": "Your name",
+  "contact.placeholder.message": "Tell us how we can help you...",
+  "contact.opt.default": "Select a topic...",
+  "contact.opt.support": "App support",
+  "contact.opt.partnership": "Partnership",
+  "contact.opt.press": "Press",
+  "contact.opt.other": "Other",
+  "contact.submit": "Send message →",
+  "contact.success.title": "Message sent!",
+  "contact.success.sub": "Thank you for reaching out. We'll reply within 24 hours.",
 
   "results.tag": "Results",
   "results.subtitle": "No marketing. No Photoshop. Metrics from real users who followed their Bloomie routine.",

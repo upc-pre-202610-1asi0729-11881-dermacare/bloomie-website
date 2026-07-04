@@ -1,9 +1,9 @@
 {
   "nav.how": "Cómo funciona",
-  "nav.results": "Resultados",
   "nav.features": "Características",
   "nav.pricing": "Precios",
   "nav.about": "Nosotros",
+  "nav.contact": "Contáctanos",
   "nav.login": "Iniciar sesión",
   "nav.cta": "Analizar mi piel",
 
@@ -13,7 +13,7 @@
 
   "features.ai.title": "Análisis multicapa con IA",
   "features.ai.desc": "Visión computacional entrenada con más de 2M de imágenes dermatológicas.",
-  "features.ai.tag": "Machine Learning",
+  "features.ai.tag": "Visión computacional",
 
   "features.dashboard.title": "Panel de progreso",
   "features.dashboard.desc": "Visualiza tu progreso semana a semana.",
@@ -23,17 +23,9 @@
   "features.routine.desc": "Pasos ordenados y adaptados a tu piel.",
   "features.routine.tag": "Hiperpersonalización",
 
-  "features.geo.title": "Geolocalización de productos",
-  "features.geo.desc": "Encuentra exactamente dónde comprar lo que necesitas.",
-  "features.geo.tag": "Ecosistema completo",
-
   "features.derm.title": "Acceso a dermatólogos",
   "features.derm.desc": "Conecta con especialistas cuando sea necesario.",
   "features.derm.tag": "Red médica",
-
-  "features.reminders.title": "Recordatorios inteligentes",
-  "features.reminders.desc": "Bloomie te recuerda cuándo aplicar cada producto.",
-  "features.reminders.tag": "Hábito + constancia",
 
   "how.subtitle": "Sin citas. Sin esperas. Sin diagnósticos genéricos",
 
@@ -46,8 +38,33 @@
   "footer.features": "Características",
   "footer.pricing": "Precios",
   "footer.about": "Nosotros",
-  "footer.privacy": "Privacidad",
-  "footer.terms": "Términos",
+  "footer.contact": "Contacto",
+
+  "contact.eyebrow": "Escríbenos",
+  "contact.title": "¿Tienes preguntas? Nos encantaría<br/><em>escucharte</em>",
+  "contact.sub": "Ya sea que necesites soporte, quieras explorar una alianza, o tengas una consulta de prensa — nuestro equipo responde en menos de 24 horas.",
+  "contact.card1.title": "Soporte",
+  "contact.card1.desc": "Problemas con la app, tu cuenta o los resultados del análisis de piel.",
+  "contact.card2.title": "Alianzas",
+  "contact.card2.desc": "Clínicas, dermatólogos y marcas interesadas en colaborar.",
+  "contact.card3.title": "Prensa",
+  "contact.card3.desc": "Consultas de medios y recursos de prensa para periodistas.",
+  "contact.form.title": "Envíanos un <em>mensaje</em>",
+  "contact.form.sub": "Te responderemos lo antes posible.",
+  "contact.label.name": "Nombre completo",
+  "contact.label.email": "Correo electrónico",
+  "contact.label.subject": "Asunto",
+  "contact.label.message": "Mensaje",
+  "contact.placeholder.name": "Tu nombre",
+  "contact.placeholder.message": "Cuéntanos cómo podemos ayudarte...",
+  "contact.opt.default": "Selecciona un tema...",
+  "contact.opt.support": "Soporte técnico",
+  "contact.opt.partnership": "Alianza",
+  "contact.opt.press": "Prensa",
+  "contact.opt.other": "Otro",
+  "contact.submit": "Enviar mensaje →",
+  "contact.success.title": "¡Mensaje enviado!",
+  "contact.success.sub": "Gracias por escribirnos. Responderemos en menos de 24 horas.",
 
   "how.tag": "Cómo funciona",
 
