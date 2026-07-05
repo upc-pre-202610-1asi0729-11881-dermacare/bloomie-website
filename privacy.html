@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Bloomie</title>
+    <meta name="description" content="Privacy Policy explaining how Bloomie collects, uses, and protects your personal and health data." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bloomie.app/privacy.html" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+
+    <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Bloomie — home">Bloom<span>ie</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <button id="lang-btn" onclick="toggleLanguage()" class="lang-btn">EN</button>
+      <ul class="nav-links">
+        <li><a href="how-it-works.html" data-i18n="nav.how">How it works</a></li>
+        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About us</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact us</a></li>
+        <li><a href="https://witty-beach-0bf4c770f.7.azurestaticapps.net" class="nav-cta" data-i18n="nav.login">Log in</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="legal-hero" aria-labelledby="privacy-title">
+        <div class="legal-hero-inner">
+          <span class="section-tag" data-i18n="privacy.tag">Legal</span>
+          <h1 class="section-title" id="privacy-title" data-i18n="privacy.title">Privacy <em>Policy</em></h1>
+          <p class="legal-updated" data-i18n="privacy.updated">Last updated: July 2026</p>
+        </div>
+      </section>
+
+      <article class="legal-content reveal">
+        <p data-i18n="privacy.intro">This Privacy Policy explains how Bloomie collects, uses, and protects your personal data — including sensitive health and biometric information — when you use our platform.</p>
+
+        <h2 data-i18n="privacy.s1.title">1. Legal Framework</h2>
+        <p data-i18n="privacy.s1.body">This Privacy Policy is governed by Law No. 29733, the Peruvian Personal Data Protection Law, and its Regulations (Supreme Decree No. 003-2013-JUS). Given the sensitive nature of the health data and biometric images processed by the platform, Bloomie additionally applies reinforced consent practices aligned with international standards such as the GDPR.</p>
+
+        <h2 data-i18n="privacy.s2.title">2. Data We Collect</h2>
+        <div class="legal-table-wrap">
+          <table data-i18n="privacy.s2.table">
+            <thead>
+              <tr><th>Category</th><th>Examples</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Account data</td><td>Name, email address, date of birth, password (encrypted)</td></tr>
+              <tr><td>Biometric and health data (sensitive)</td><td>Facial photographs captured in Skin Scan, skin analysis results, routine history</td></tr>
+              <tr><td>Appointment data</td><td>Date, time, assigned dermatologist, reason for consultation</td></tr>
+              <tr><td>Payment data</td><td>Subscription and billing history (card data is handled by Stripe, not Bloomie)</td></tr>
+              <tr><td>AI interactions</td><td>Conversations with the AI Assistant</td></tr>
+              <tr><td>Technical data</td><td>IP address, device information, browsing cookies (Landing Page)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 data-i18n="privacy.s3.title">3. Purpose of Processing</h2>
+        <p data-i18n="privacy.s3.body">We use your data to: (a) generate skin analysis and personalized recommendations, (b) manage appointments with dermatologists, (c) process payments and subscriptions, (d) improve our recommendation models and the service overall, and (e) send service-related communications. If data or images are used to train or improve AI models, this requires separate, specific consent, independent from acceptance of this Policy.</p>
+
+        <h2 data-i18n="privacy.s4.title">4. Consent</h2>
+        <p data-i18n="privacy.s4.body">Processing of sensitive data (facial photographs, health information) requires express, informed, prior, and individualized consent, given through a dedicated checkbox the first time a user uses Skin Scan. This consent may be withdrawn at any time from your account settings, without affecting processing already carried out.</p>
+
+        <h2 data-i18n="privacy.s5.title">5. Sharing with Third Parties</h2>
+        <p data-i18n="privacy.s5.body">Bloomie shares data with the following providers, only to the extent necessary to provide the service:</p>
+        <ul data-i18n="privacy.s5.list">
+          <li>Stripe (payment processing)</li>
+          <li>Google Gemini API (processing AI Assistant conversations)</li>
+          <li>Microsoft Azure (cloud storage and infrastructure)</li>
+          <li>Open Beauty Facts (product catalog, no exchange of users' personal data)</li>
+        </ul>
+        <p data-i18n="privacy.s5.note">Bloomie does not sell personal data to third parties for advertising purposes.</p>
+
+        <h2 data-i18n="privacy.s6.title">6. Storage and Security</h2>
+        <p data-i18n="privacy.s6.body">Data and images are stored on Microsoft Azure servers with encryption in transit (TLS) and at rest. Skin Scan photographs are retained while the account is active and are permanently deleted within 30 days of account deletion, unless a longer retention period is legally required.</p>
+
+        <h2 data-i18n="privacy.s7.title">7. Data Subject Rights (ARCO)</h2>
+        <p data-i18n="privacy.s7.body">You may exercise your rights of Access, Rectification, Cancellation, and Opposition over your personal data at any time — including deletion of your photographs and history — by writing to <a href="mailto:privacy@bloomie.app">privacy@bloomie.app</a> or from the Profile section of the app.</p>
+
+        <h2 data-i18n="privacy.s8.title">8. Minors</h2>
+        <p data-i18n="privacy.s8.body">Bloomie does not knowingly collect data from individuals under 18 without verifiable consent from a parent or legal guardian. Any account belonging to a minor without such authorization will be suspended.</p>
+
+        <h2 data-i18n="privacy.s9.title">9. Cookies</h2>
+        <p data-i18n="privacy.s9.body">The Landing Page uses first-party and third-party cookies (analytics) to improve the user experience. You can manage your cookie preferences from the notice shown when you first enter the site.</p>
+
+        <h2 data-i18n="privacy.s10.title">10. International Data Transfers</h2>
+        <p data-i18n="privacy.s10.body">Since Stripe, Google, and Microsoft Azure may process data outside Peru, Bloomie ensures that such transfers are made only with providers that meet data protection standards equivalent to or higher than those required by Law No. 29733.</p>
+
+        <h2 data-i18n="privacy.s11.title">11. Contact</h2>
+        <p data-i18n="privacy.s11.body">For questions, complaints, or to exercise your ARCO rights, write to <a href="mailto:privacy@bloomie.app">privacy@bloomie.app</a>.</p>
+
+        <h2 data-i18n="privacy.s12.title">12. Changes to this Policy</h2>
+        <p data-i18n="privacy.s12.body">Any material change will be communicated to users at least 15 days in advance, by email or through a notice within the platform.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">Bloom<span>ie</span></div>
+        <nav class="footer-nav" aria-label="Secondary navigation">
+          <a href="how-it-works.html" data-i18n="footer.how">How it works</a>
+          <a href="features.html" data-i18n="footer.features">Features</a>
+          <a href="pricing.html" data-i18n="footer.pricing">Pricing</a>
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="contact.html" data-i18n="footer.contact">Contact</a>
+        </nav>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="privacy.html" aria-current="page" data-i18n="footer.privacy">Privacy Policy</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Bloomie</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+  </body>
+</html>
